@@ -7,22 +7,21 @@ module.exports = {
       {
         name: 'Just Dark Arts',
         instructor: 'Ben Manning',
-        grade: 'Senior'
+        grade: 'Senior',
+        createdAt: new Date(),
+        updatedAt: new Date()
       },
       {
         name: 'Transfiguration',
         instructor: 'Austin Taylor',
-        grade: 'Freshman'
+        grade: 'Freshman',
+        createdAt: new Date(),
+        updatedAt: new Date()
       }
     ])
   },
 
   async down(queryInterface, Sequelize) {
-    /**
-     * Add commands to revert seed here.
-     *
-     * Example:
-     * await queryInterface.bulkDelete('People', null, {});
-     */
+    await queryInterface.bulkDelete('courses', null, {})
   }
 }
