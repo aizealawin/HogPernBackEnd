@@ -1,0 +1,17 @@
+{
+  "development": {
+    "database": "hogwarts_pern_development",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "test": {
+    "database": "hogwarts_pern_test",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  },
+  "production": {
+    "database": "hogwarts_pern_production",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}
