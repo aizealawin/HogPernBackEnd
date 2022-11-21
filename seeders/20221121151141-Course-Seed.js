@@ -17,6 +17,34 @@ module.exports = {
         grade: 'Freshman',
         createdAt: new Date(),
         updatedAt: new Date()
+      },
+      {
+        name: 'Herbology',
+        professor: 'John Jacobs',
+        grade: 'Sophomore',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        name: 'Flying Lessons',
+        professor: 'Michael Lackey',
+        grade: 'Freshman',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        name: 'Astronomy',
+        professor: 'Nabila Ayaba',
+        grade: 'Junior',
+        createdAt: new Date(),
+        updatedAt: new Date()
+      },
+      {
+        name: 'History of Magic',
+        professor: 'Viry Flores',
+        grade: 'Senior',
+        createdAt: new Date(),
+        updatedAt: new Date()
       }
     ])
   },
