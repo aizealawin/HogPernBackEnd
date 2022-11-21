@@ -9,10 +9,10 @@ module.exports = (sequelize, DataTypes) => {
      * hi world
      */
     static associate(models) {
-      Course.hasMany(models.Student, {
+      Course.belongsToMany(models.Student, {
         as: 'student',
-        through: models.Student_Course,
-        foreignKey: 'studentId'
+        through: models.Student_Courses,
+        foreignKey: 'courseId'
       })
     }
   }

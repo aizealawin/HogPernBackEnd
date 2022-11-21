@@ -9,9 +9,9 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       Student.belongsToMany(models.Course, {
-        as: 'students',
-        through: models.Student_Course,
-        foreignKey: 'courseId'
+        as: 'courses',
+        through: models.Student_Courses,
+        foreignKey: 'studentId'
       })
     }
   }
@@ -19,15 +19,7 @@ module.exports = (sequelize, DataTypes) => {
     {
       name: DataTypes.STRING,
       email: DataTypes.STRING,
-      house: DataTypes.STRING,
-      courseId: {
-        type: DataTypes.INTEGER,
-        onDelete: 'CASCADE',
-        references: {
-          model: 'courses',
-          key: 'id'
-        }
-      }
+      house: DataTypes.STRING
     },
     {
       sequelize,
