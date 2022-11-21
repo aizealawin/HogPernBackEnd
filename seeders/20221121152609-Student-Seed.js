@@ -8,7 +8,6 @@ module.exports = {
         name: 'Kusal Tholka Mudalige',
         email: 'kusal@iscool.com',
         house: 'Gryffindor',
-        courseId: 1,
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -16,7 +15,6 @@ module.exports = {
         name: 'Jen Dunlap',
         email: 'chainsaw@chainsaw.com',
         house: 'Slytherin',
-        courseId: 1,
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -24,7 +22,6 @@ module.exports = {
         name: 'Edward Yuabov',
         email: 'yuaboved@gmail.com',
         house: 'Hufflepuff',
-        courseId: 1,
         createdAt: new Date(),
         updatedAt: new Date()
       },
@@ -32,7 +29,6 @@ module.exports = {
         name: 'Aaron Sanchez',
         email: 'aaron@gamer.com',
         house: 'Hufflepuff',
-        courseId: 2,
         createdAt: new Date(),
         updatedAt: new Date()
       }
