@@ -6,14 +6,14 @@ module.exports = {
     await queryInterface.bulkInsert('courses', [
       {
         name: 'Just Dark Arts',
-        instructor: 'Ben Manning',
+        professor: 'Ben Manning',
         grade: 'Senior',
         createdAt: new Date(),
         updatedAt: new Date()
       },
       {
         name: 'Transfiguration',
-        instructor: 'Austin Taylor',
+        professor: 'Austin Taylor',
         grade: 'Freshman',
         createdAt: new Date(),
         updatedAt: new Date()

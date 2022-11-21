@@ -29,7 +29,7 @@ const CreateCourse = async (req, res) => {
 
 const UpdateCourse = async (req, res) => {
   try {
-    const course = await course.update(
+    const course = await Course.update(
       { ...req.body },
       { where: { id: req.params.course_Id }, returning: true }
     )

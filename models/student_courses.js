@@ -13,8 +13,22 @@ module.exports = (sequelize, DataTypes) => {
   }
   Student_Courses.init(
     {
-      studentId: DataTypes.INTEGER,
-      courseId: DataTypes.INTEGER,
+      studentId: {
+        type: DataTypes.INTEGER,
+        onDelete: 'CASCADE',
+        references: {
+          model: 'students',
+          key: 'id'
+        }
+      },
+      courseId: {
+        type: DataTypes.INTEGER,
+        onDelete: 'CASCADE',
+        references: {
+          model: 'courses',
+          key: 'id'
+        }
+      },
       grade: DataTypes.INTEGER
     },
     {
