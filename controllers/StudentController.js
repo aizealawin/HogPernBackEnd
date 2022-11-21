@@ -15,8 +15,10 @@ const GetStudentById = async (req, res) => {
       include: [
         {
           model: Course,
-          as: 'students',
-          through: { attributes: [] }
+          as: 'courses',
+          through: {
+            attributes: ['grade']
+          }
         }
       ]
     })
