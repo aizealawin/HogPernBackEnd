@@ -11,7 +11,7 @@ module.exports = (sequelize, DataTypes) => {
       Student.belongsToMany(models.Course, {
         as: 'students',
         through: models.Student_Courses,
-        foreignKey: 'courseId'
+        foreignKey: 'studentId'
       })
     }
   }
