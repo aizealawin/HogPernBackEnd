@@ -11,6 +11,6 @@ app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-app.get('/', (req, res) => res.json({ message: 'Welcome to Hogwarts B!tch' }))
+app.get('/', (req, res) => res.json({ message: 'Welcome to Hogwarts!' }))
 app.use('/api', AppRouter)
 app.listen(PORT, () => console.log(`Server Started On Port: ${PORT}`))
