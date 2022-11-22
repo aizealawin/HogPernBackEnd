@@ -2,7 +2,17 @@ const { Student, Course } = require('../models')
 
 const GetStudents = async (req, res) => {
   try {
-    const students = await Student.findAll()
+    const students = await Student.findAll({
+      include: [
+        {
+          model: Course,
+          as: 'courses',
+          through: {
+            attributes: ['grade']
+          }
+        }
+      ]
+    })
     res.send(students)
   } catch (error) {
     throw error
