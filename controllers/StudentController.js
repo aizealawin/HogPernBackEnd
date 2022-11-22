@@ -8,7 +8,7 @@ const GetStudents = async (req, res) => {
           model: Course,
           as: 'courses',
           through: {
-            attributes: ['grade']
+            attributes: ['grade', 'courseId']
           }
         }
       ]
