@@ -14,7 +14,7 @@ module.exports = {
       {
         studentId: 1,
         courseId: 2,
-        grade: 1,
+        grade: 2,
         createdAt: new Date(),
         updatedAt: new Date()
       },
