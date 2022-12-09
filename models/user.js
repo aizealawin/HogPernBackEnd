@@ -7,16 +7,11 @@ module.exports = (sequelize, DataTypes) => {
      * This method is not a part of Sequelize lifecycle.
      * The `models/index` file will call this method automatically.
      */
-    static associate(models) {
-      User.belongsTo(models.Course, {
-        through: models.Student_Courses,
-        foreignKey: 'studentId'
-      })
-    }
+    static associate(models) {}
   }
   User.init(
     {
-      userName: {
+      name: {
         type: DataTypes.STRING,
         allowNull: false
       },
@@ -28,13 +23,9 @@ module.exports = (sequelize, DataTypes) => {
           isEmail: true
         }
       },
-      password: {
+      passwordDigest: {
         type: DataTypes.STRING,
-        allowNull: false,
-        unique: true,
-        validate: {
-          isEmail: true
-        }
+        allowNull: false
       }
     },
     {
